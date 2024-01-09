@@ -1,6 +1,7 @@
 import { ChangeEvent, useEffect, useState } from "react";
 import { Users } from "./Navbar";
 
+// This is Debouncing Example
 export default function AllUsers({ data }: { data: Users[] }) {
   const [query, setQuery] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
